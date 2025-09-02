@@ -1,0 +1,102 @@
+/* ===== Global styles ===== */
+:root {
+  --brand: #0d6efd; /* Bootstrap primary */
+  --bg: #0b0f19; /* Dark background */
+  --muted: #8a93a6;
+}
+html,
+body {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+}
+body {
+  background: var(--bg);
+  color: #e6e9ef;
+  scroll-behavior: smooth;
+}
+
+/* Section utilities */
+section {
+  padding: 80px 0;
+}
+.section-title {
+  font-weight: 800;
+  letter-spacing: 0.4px;
+}
+.section-sub {
+  color: var(--muted);
+}
+
+/* Hero */
+.hero {
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  background: radial-gradient(
+      1200px 600px at 10% 10%,
+      rgba(13, 110, 253, 0.08),
+      transparent
+    ),
+    radial-gradient(
+      800px 400px at 90% 20%,
+      rgba(111, 66, 193, 0.12),
+      transparent
+    );
+}
+.hero .display-5 {
+  font-weight: 800;
+}
+.badge-tech {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Cards */
+.card {
+  background: #141a29;
+  border: 1px solid #1e263b;
+  color: white;
+}
+.card:hover {
+  transform: translateY(-3px);
+  transition: 0.2s ease;
+}
+
+/* Timeline */
+.timeline {
+  border-left: 2px solid #1e263b;
+  padding-left: 1rem;
+}
+.timeline .item {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.timeline .item::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0.3rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--brand);
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #1e263b;
+}
+
+/* Smooth anchor offset for fixed navbar */
+.anchor-offset {
+  scroll-margin-top: 80px;
+}
+
+/* Links */
+a {
+  color: #c7d2fe;
+}
+a:hover {
+  color: #94a3ff;
+}

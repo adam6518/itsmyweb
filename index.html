@@ -27,111 +27,14 @@
       rel="stylesheet"
     />
 
-    <style>
-      /* ===== Global styles ===== */
-      :root {
-        --brand: #0d6efd; /* Bootstrap primary */
-        --bg: #0b0f19; /* Dark background */
-        --muted: #8a93a6;
-      }
-      html,
-      body {
-        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto,
-          "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
-          "Segoe UI Emoji";
-      }
-      body {
-        background: var(--bg);
-        color: #e6e9ef;
-        scroll-behavior: smooth;
-      }
-
-      /* Section utilities */
-      section {
-        padding: 80px 0;
-      }
-      .section-title {
-        font-weight: 800;
-        letter-spacing: 0.4px;
-      }
-      .section-sub {
-        color: var(--muted);
-      }
-
-      /* Hero */
-      .hero {
-        min-height: 92vh;
-        display: flex;
-        align-items: center;
-        background: radial-gradient(
-            1200px 600px at 10% 10%,
-            rgba(13, 110, 253, 0.08),
-            transparent
-          ),
-          radial-gradient(
-            800px 400px at 90% 20%,
-            rgba(111, 66, 193, 0.12),
-            transparent
-          );
-      }
-      .hero .display-5 {
-        font-weight: 800;
-      }
-      .badge-tech {
-        background: rgba(255, 255, 255, 0.08);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-      }
-
-      /* Cards */
-      .card {
-        background: #141a29;
-        border: 1px solid #1e263b;
-      }
-      .card:hover {
-        transform: translateY(-3px);
-        transition: 0.2s ease;
-      }
-
-      /* Timeline */
-      .timeline {
-        border-left: 2px solid #1e263b;
-        padding-left: 1rem;
-      }
-      .timeline .item {
-        position: relative;
-        margin-bottom: 1.5rem;
-      }
-      .timeline .item::before {
-        content: "";
-        position: absolute;
-        left: -10px;
-        top: 0.3rem;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background: var(--brand);
-        box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
-      }
-
-      /* Footer */
-      footer {
-        border-top: 1px solid #1e263b;
-      }
-
-      /* Smooth anchor offset for fixed navbar */
-      .anchor-offset {
-        scroll-margin-top: 80px;
-      }
-
-      /* Links */
-      a {
-        color: #c7d2fe;
-      }
-      a:hover {
-        color: #94a3ff;
-      }
-    </style>
+    <!-- CSS -->
+    <link
+      href="./index.css"
+      rel="stylesheet"
+    />
   </head>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="index.js"></script>
   <body>
     <!-- ===== Navbar (fixed) ===== -->
     <nav
@@ -139,7 +42,7 @@
       class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-secondary"
     >
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">ECA</a>
+        <a class="navbar-brand fw-bold" href="#">It's My Web</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -180,11 +83,11 @@
         <div class="row align-items-center g-4">
           <div class="col-lg-7">
             <span class="badge rounded-pill badge-tech text-light mb-3"
-              ><i class="bi bi-lightning-charge me-1"></i>Open to work</span
+              ><i class="bi bi-lightning-charge me-1"></i>Open to work & learn more</span
             >
-            <h1 class="display-5">Edward Coky Adam</h1>
+            <h1 class="display-5">I'm Adam</h1>
             <p class="lead text-secondary mb-4">
-              Web Developer • Frontend & Full‑Stack
+              Web Developer • Frontend Developer • Full Stack Developer
             </p>
             <p class="text-light-50">
               I build responsive, performant web apps with React.js, Node.js
@@ -205,7 +108,7 @@
                 ><i class="bi bi-rocket-takeoff me-2"></i>See Projects</a
               >
               <!-- TODO: replace with your resume link -->
-              <a href="#" class="btn btn-outline-light"
+              <a href="./assets/resume/Edward_Coky_Adam_CV.pdf" class="btn btn-outline-light" download
                 ><i class="bi bi-file-earmark-text me-2"></i>Download Résumé</a
               >
             </div>
@@ -227,10 +130,10 @@
       <div class="container">
         <div class="row align-items-end mb-4">
           <div class="col-lg-9">
-            <h2 class="section-title">Selected Projects</h2>
+            <h2 class="section-title">See My Projects</h2>
             <p class="section-sub">
-              End‑to‑end builds showcasing real‑world features. Repos and live
-              demos included.
+              End‑to‑end builds showcasing real‑world features. Github Repo and Screenshot
+               included.
             </p>
           </div>
           <div class="col-lg-3 text-lg-end">
@@ -254,7 +157,7 @@
                 alt="Inventory app preview"
               />
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Landscape Inventory System</h5>
+                <h5 class="card-title">Landscape Inventory System at PT. Mitra Utama Lansekap</h5>
                 <p class="card-text small text-secondary">
                   Full‑stack web app for managing projects, plant orders, order
                   history, and financials. Role‑based access, authentication,
@@ -288,7 +191,7 @@
                 alt="Restaurant app preview"
               />
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Restaurant Ordering</h5>
+                <h5 class="card-title">Restaurant Ordering System at Bakmibun</h5>
                 <p class="card-text small text-secondary">
                   Responsive restaurant ordering with menu management, image
                   upload, login/register, and multi‑role user management.
@@ -318,7 +221,7 @@
                 alt="Landing pages"
               />
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Landing Pages</h5>
+                <h5 class="card-title">Landing Pages for Sinar Pajar Alam Perkasa</h5>
                 <p class="card-text small text-secondary">
                   A collection of fast, accessible landing pages optimized for
                   conversions and Lighthouse performance.
@@ -485,41 +388,6 @@
               >
             </div>
           </div>
-          <div class="col-lg-6">
-            <!-- Simple contact form (client-side only). For production, plug into a backend or service like Formspree) -->
-            <form id="contactForm" class="card p-3">
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <label class="form-label">Name</label>
-                  <input type="text" class="form-control" id="name" required />
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label">Email</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    required
-                  />
-                </div>
-                <div class="col-12">
-                  <label class="form-label">Message</label>
-                  <textarea
-                    class="form-control"
-                    id="message"
-                    rows="4"
-                    required
-                  ></textarea>
-                </div>
-                <div class="col-12 d-grid">
-                  <button type="submit" class="btn btn-primary">Send</button>
-                </div>
-                <div id="formAlert" class="col-12 small"></div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
     </section>
 
     <footer class="py-4">
@@ -545,46 +413,5 @@
         </div>
       </div>
     </footer>
-
-    <script>
-      // ===== Active nav link on scroll (basic) =====
-      const sections = document.querySelectorAll("header, section");
-      const navLinks = document.querySelectorAll(".nav-link");
-      const opts = { rootMargin: "-60% 0px -35% 0px", threshold: 0 };
-      const obs = new IntersectionObserver((entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            const id = e.target.getAttribute("id");
-            navLinks.forEach((l) =>
-              l.classList.toggle("active", l.getAttribute("href") === `#${id}`)
-            );
-          }
-        });
-      }, opts);
-      sections.forEach((s) => obs.observe(s));
-
-      // ===== Contact form (demo only) =====
-      const form = document.getElementById("contactForm");
-      const alertBox = document.getElementById("formAlert");
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const name = document.getElementById("name").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const message = document.getElementById("message").value.trim();
-        if (!name || !email || !message) {
-          alertBox.className = "col-12 small text-danger";
-          alertBox.textContent = "Please complete all fields.";
-          return;
-        }
-        // In production: send via your backend or Formspree/EmailJS.
-        alertBox.className = "col-12 small text-success";
-        alertBox.textContent =
-          "Thanks! Your message was validated on the client side.";
-        form.reset();
-      });
-
-      // ===== Footer year =====
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
   </body>
 </html>
